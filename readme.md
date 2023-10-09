@@ -6,7 +6,8 @@ A Python-based ML model trained using sci-kit learn to predict whether certain c
 ## Aspects
 
 ---
-Aspects will  refer to the variables that are considered. They include:
+Aspects will refer to the variables that are considered. They include:
+
 - Temperature (point)
 - Relative Humidity (point)
 - Soil Moisture (point)
@@ -15,3 +16,7 @@ Aspects will  refer to the variables that are considered. They include:
 - Wind Speed (point AND local via Weather API)
 - Rainfall (local via Weather API)
 - Month
+
+## Dataset
+
+Columns: X,Y,month,day,FFMC,DMC,DC,ISI,temp,RH,wind,rain,area
