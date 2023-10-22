@@ -26,7 +26,7 @@ from sklearn.model_selection import train_test_split
 # load forestfires.csv
 
 fireData = pd.read_csv('../datasets/forestfires.csv')
-fireData.drop(['X', 'Y'], axis=1, inplace=True)
+fireData.drop(['X', 'Y', 'FFMC', 'DMC', 'DC', 'ISI'], axis=1, inplace=True)
 
 # Dictionary mapping month names to month numbers
 month_to_number = {
@@ -44,9 +44,20 @@ month_to_number = {
     'dec': 12
 }
 
-# Convert month names to month numbers using map() function
-fireData['month'] = fireData['month'].map(month_to_number)
+# converting days to a number
+day_to_number = {
+    'mon': 1,
+    'tue': 2,
+    'wed': 3,
+    'thu': 4,
+    'fri': 5,
+    'sat': 6,
+    'sun': 7
+}
 
+# Convert month & day names to month & day numbers using map() function
+fireData['month'] = fireData['month'].map(month_to_number)
+fireData['day'] = fireData['day'].map(day_to_number)
 fireData['class'] = 1
 
-fireData.head()
+print(fireData.head())
