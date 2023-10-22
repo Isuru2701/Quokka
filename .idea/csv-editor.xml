@@ -38,6 +38,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\datasets\MERGEDDATA.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\datasets\SHIFTEDATA.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\datasets\controldata.csv">
           <value>
             <Attribute>
