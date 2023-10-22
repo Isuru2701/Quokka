@@ -61,3 +61,5 @@ fireData['day'] = fireData['day'].map(day_to_number)
 fireData['class'] = 1
 
 print(fireData.head())
+
+# Prep non-fire data
