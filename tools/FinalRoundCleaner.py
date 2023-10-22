@@ -18,4 +18,16 @@ if __name__ == "__main__":
     df['day'] = df['day'].map(day_to_number)
     df['class'] = 0
 
+
+    # match names of forestfires.csv
+    new_names = {
+    "T": "temp",
+    "U": "RH",
+    "Ff": "wind",
+    "RRR": "rain",
+    }
+
+    # rename columns
+    df.rename(columns=new_names, inplace=True)
+
     df.to_csv('../datasets/FINALCLEANcontroldata.csv', index=False)

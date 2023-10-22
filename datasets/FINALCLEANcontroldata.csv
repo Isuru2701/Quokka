@@ -1,4 +1,4 @@
-temp,RH,Ff,rain,month,day,class
+temp,RH,wind,rain,month,day,class
 2.5,88.0,0.0,0.0,1,2,0
 3.8,82.0,1.0,0.0,1,2,0
 4.5,79.0,0.0,0.0,1,2,0

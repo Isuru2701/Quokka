@@ -3,16 +3,7 @@ import pandas as pd
 if __name__ == "__main__":
     df = pd.read_csv("../datasets/CLEANROUND1controldata.csv")
 
-    # match names of forestfires.csv
-    new_names = {
-    "T": "temp",
-    "U": "RH",
-    "FF": "wind",
-    "RRR": "rain",
-    }
 
-    # rename columns
-    df.rename(columns=new_names, inplace=True)
 
     #slice to reduce from 24,000 to 2000
     df = df.iloc[:2000]
