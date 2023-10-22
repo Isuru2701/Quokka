@@ -17,8 +17,9 @@ Aspects will refer to the variables that are considered. They include:
 - Rainfall (local via Weather API)
 - Month
 
-## Dataset
+## Datasets
 
+### forestfires.csv
 Columns: X, Y, month, day, FFMC, DMC, DC, ISI, temp, RH, wind, rain, area
 <p>
 X - x-axis spatial coordinate within the Montesinho park map: 1 to 9
@@ -51,3 +52,11 @@ area - the burned area of the forest (in hectacres): 0.00 to 1090.84
 Source: [**Portugal Forest Fires**](https://archive.ics.uci.edu/ml/datasets/forest+fires)
 <br>
 *Cortez,Paulo and Morais,Anbal. (2008). Forest Fires. UCI Machine Learning Repository. https://doi.org/10.24432/C5D88D.*
+---
+
+### WildFire_Prediction_Data_Set.csv
+
+
+Source: [**Data for: Predictive Modeling of Forest Fires: A New Dataset and Machine Learning Approach**](https://data.mendeley.com/datasets/85t28npyv7/1)
+<br> 
+*OULAD SAYAD, YOUNES; Mousannif, Hajar; Al Moatassime, Hassan (2019), “Data for: Predictive Modeling of Forest Fires: A New Dataset and Machine Learning Approach”, Mendeley Data, V1, doi: 10.17632/85t28npyv7.1*
