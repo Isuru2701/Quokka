@@ -5,8 +5,9 @@ if __name__ == "__main__":
 
 
 
-    #slice to reduce from 24,000 to 2000
-    df = df.iloc[:2000]
+
+    # Randomly select rows to remove
+    df = df.sample(2000, random_state=42)
 
     #split granular datetime into month and day
     # Convert the datetime column to pandas datetime object
@@ -16,8 +17,6 @@ if __name__ == "__main__":
     df['month'] = df['Local time in Braganca'].dt.month
     df['day'] = df['Local time in Braganca'].dt.strftime(
         '%a')  # %a gives abbreviated weekday names (Mon, Tue, Wed, etc.)
-
-    df.drop(['Local time in Braganca'], axis=1, inplace=True)
 
 
     # Save the updated DataFrame with new columns to a new CSV file

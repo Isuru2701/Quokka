@@ -24,7 +24,7 @@ from sklearn.model_selection import train_test_split
 
 """
 
-df = pd.read_csv('../datasets/MERGEDDATA.csv')
+df = pd.read_csv('../datasets/SHIFTEDATA.csv')
 
 #6
 X = df[['month', 'day','temp', 'RH', 'wind', 'rain']]
@@ -35,8 +35,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_
 # Build NN
 model = Sequential(
     [
-        Dense(128, activation='relu', input_shape=(6,)),
-        Dense(64, activation='relu'),
+        Dense(64, activation='relu', input_shape=(6,)),
         Dense(32, activation='relu'),
         Dense(1, activation='sigmoid')
     ]
@@ -46,7 +45,7 @@ model = Sequential(
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 # Train NN
-model.fit(X_train, y_train, epochs=100, batch_size=32, validation_data=(X_test, y_test))
+model.fit(X_train, y_train, epochs=10, batch_size=32, validation_data=(X_test, y_test))
 
 loss, accuracy = model.evaluate(X_test, y_test)
 print(f'Loss: {loss:.2f}')

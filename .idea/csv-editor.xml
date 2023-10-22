@@ -52,6 +52,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\datasets\WildFire_Prediction_Data_Set.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\datasets\controldata.csv">
           <value>
             <Attribute>
