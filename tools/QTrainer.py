@@ -18,9 +18,35 @@ from sklearn.model_selection import train_test_split
     8. compile model
     9. train model
     10. test & evaluate
+    
+    May or may not use FFMC DMC DC and ISI
 
 """
 
 # load forestfires.csv
 
-df = pd.read_csv('../datasets/forestfires.csv')
+fireData = pd.read_csv('../datasets/forestfires.csv')
+fireData.drop(['X', 'Y'], axis=1, inplace=True)
+
+# Dictionary mapping month names to month numbers
+month_to_number = {
+    'jan': 1,
+    'feb': 2,
+    'mar': 3,
+    'apr': 4,
+    'may': 5,
+    'jun': 6,
+    'jul': 7,
+    'aug': 8,
+    'sep': 9,
+    'oct': 10,
+    'nov': 11,
+    'dec': 12
+}
+
+# Convert month names to month numbers using map() function
+fireData['month'] = fireData['month'].map(month_to_number)
+
+fireData['class'] = 1
+
+fireData.head()
