@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\datasets\CLEANROUND2controldata.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\datasets\CLEAN_WildFire_Prediction_Data_Set.csv">
           <value>
             <Attribute>
