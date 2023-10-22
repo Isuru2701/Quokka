@@ -55,7 +55,13 @@ Source: [**Portugal Forest Fires**](https://archive.ics.uci.edu/ml/datasets/fore
 ---
 
 ### WildFire_Prediction_Data_Set.csv
-
+NDVI - Normalized Difference Vegetation Index
+<br>
+LST - Land Surface Temperature
+<br>
+BURNED_AREA -  Thermal Anomalies
+<br>
+CLASS - fire or no fire
 
 Source: [**Data for: Predictive Modeling of Forest Fires: A New Dataset and Machine Learning Approach**](https://data.mendeley.com/datasets/85t28npyv7/1)
 <br> 
